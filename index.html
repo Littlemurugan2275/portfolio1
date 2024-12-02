@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Little Murugan, a software developer specializing in deep learning and image security.">
+    <meta name="keywords" content="Portfolio, Deep Learning, Image Security, Software Developer">
+    <meta name="author" content="Little Murugan">
+    <title>Little Murugan's Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+        <!-- AOS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+        <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <style>
+        /*Container*/
+                .container-fluid {
+            max-width: 120px; /* Maximum width of the container */
+            margin: 0 auto; /* Center the container horizontally */
+            padding: 0 15px; /* Padding on the sides */
+            background-color: #f8f9fa; /* Light background color */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+            overflow: hidden; /* Prevent content overflow */
+            transition: all 0.3s ease-in-out; /* Smooth transition for any changes */
+        }
+        
+        .container-fluid:hover {
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Slightly larger shadow on hover */
+            background-color: #e9ecef; /* Change background color on hover */
+        }
+        
+        .container-fluid::before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background-color: #007bff; /* Accent color at the top */
+            border-radius: 8px 8px 0 0; /* Rounded top corners */
+        }
+        
+        .container-fluid > .navbar {
+            padding: 1rem; /* Add padding inside the navbar */
+            background-color: #343a40; /* Navbar background color */
+            border-radius: 8px; /* Match the container's rounded corners */
+            border: 1px solid rgba(0, 0, 0, 0.1); /* Light border */
+        }
+        
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-primary {
+            background-color: #ffffff;
+            color: #007bff;
+            border: 2px solid #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #e0e0e0;
+            color: #007bff;
+        }
+
+        .btn-secondary {
+            border-color: #ffffff;
+        }
+
+        .btn-secondary:hover {
+            background-color: #ffffff;
+            color: #007bff;
+        }
+
+        /* Section Title */
+        .section-title {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #007bff; /* Changed color to blue */
+            text-align: center;
+            margin-bottom: 1.5em;
+            letter-spacing: 2px;
+            position: relative;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 120px;
+            height: 5px;
+            background-color: #007bff; /* Same color as the text */
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -15px;
+            border-radius: 2px;
+        }
+
+        /* Keyframes for fadeIn animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+            /*card*/
+            .card {
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                animation: fadeIn 2s ease-in-out;
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .card-title {
+                color: #007bff;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+
+            .card-text {
+                color: #555;
+            }
+            
+            .container-fluid {
+                max-width: 1500px; /* Adjust this value to your desired width */
+                margin: 10 auto;
+                padding: 15px;
+            }
+            
+            .about-me-text {
+                background: white;
+                padding: 2em;
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                animation: fadeInLeft 1.5s ease-in-out;
+            }
+
+            .about-me-image img {
+                border-radius: 50%;
+                border: 5px solid #007bff;
+                max-width: 200px;
+                animation: fadeInRight 1.5s ease-in-out;
+            }
+
+            /* Animations */
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+
+            @keyframes fadeInUp {
+                0% { opacity: 0; transform: translateY(20px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+
+            @keyframes fadeInDown {
+                0% { opacity: 0; transform: translateY(-20px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+
+            @keyframes fadeInLeft {
+                0% { opacity: 0; transform: translateX(-20px); }
+                100% { opacity: 1; transform: translateX(0); }
+            }
+
+            @keyframes fadeInRight {
+                0% { opacity: 0; transform: translateX(20px); }
+                100% { opacity: 1; transform: translateX(0); }
+            }
+
+            @keyframes bounceIn {
+                0% { opacity: 0; transform: scale(0.9); }
+                50% { opacity: 1; transform: scale(1.05); }
+                100% { opacity: 1; transform: scale(1); }
+            }
+    </style>
+
+</head>
+<body>
+    <!-- HTML Header Section -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#">Little Murugan</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary animate__animated animate__bounceIn " href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary animate__animated animate__bounceIn" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary animate__animated animate__bounceIn" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary animate__animated animate__bounceIn" href="#journey">Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary animate__animated animate__bounceIn" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-secondary animate__animated animate__bounceIn" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle btn btn-secondary animate__animated animate__bounceIn" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            More
+                        </a>
+                        <div class="dropdown-menu custom-dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#blog">Blog</a>
+                            <a class="dropdown-item" href="#testimonials">Testimonials</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#resume">Resume</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- CSS Header Section-->
+    <style>
+                /* Navbar Styles */
+        header {
+            background-color: #343a40;
+            padding: 15px 0;
+        }
+
+        .navbar {
+            padding: 10;
+        }
+
+        .navbar-brand {
+            color: #f8f9fa;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .navbar-toggler {
+            border-color: rgba(248, 249, 250, 0.1);
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28248, 249, 250, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .nav-link {
+            color: #f8f9fa;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            margin-left: 15px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .nav-link:hover {
+            color: #00aaff;
+        }
+
+        .navbar-nav .dropdown-menu {
+            background-color: #343a40;
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-nav .dropdown-menu {
+            background-color: #007bff; /* Change the background color */
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navbar-nav .dropdown-toggle::after {
+            display: inline-block;
+            margin-left: 0.255em;
+            vertical-align: 0.255em;
+            content: "";
+            border-top: 0.3em solid;
+            border-right: 0.3em solid transparent;
+            border-left: 0.3em solid transparent;
+            color: #f8f9fa; /* Change arrow color */
+        }
+        
+        .dropdown-item {
+            color: #ffffff; /* Change text color */
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #0056b3; /* Change hover background color */
+            color: #ffffff; /* Change hover text color */
+        }
+        
+        .dropdown-divider {
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        
+
+        .dropdown-item {
+            color: #f8f9fa;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-item:hover {
+            background-color: #00aaff;
+            color: #ffffff;
+        }
+
+        .dropdown-divider {
+            border-color: rgba(248, 249, 250, 0.1);
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+
+            .nav-link {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .nav-link {
+                font-size: 0.9rem;
+            }
+        }
+
+        /* Custom Styles for "More" Dropdown */
+        .custom-more-btn {
+            color: #ffffff; /* Custom color for "More" button */
+            font-weight: bold; /* Make the text bold */
+            background-color: #476e81; /* Background color */
+            padding: 10px 15px; /* Padding around the button */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition for hover effects */
+        }
+    
+        .custom-more-btn:hover {
+            background-color: #ffffff; /* Background color on hover */
+            color: #394c5f; /* Text color on hover */
+        }
+    
+        .custom-dropdown-menu {
+            background-color: #343a40; /* Dark background for the dropdown */
+            border-radius: 0px 0px 5px 5px; /* Rounded bottom corners */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        }
+    
+        .dropdown-item {
+            color: #f8f9fa;
+            transition: background-color 0.3s ease-in-out;
+        }
+    
+        .dropdown-item:hover {
+            background-color: #00aaff;
+            color: #ffffff;
+        }
+    
+        .dropdown-divider {
+            border-color: rgba(248, 249, 250, 0.1);
+        }
+    
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .navbar-brand {
+                font-size: 1.3rem;
+            }
+    
+            .nav-link {
+                font-size: 1rem;
+            }
+        }
+    
+        @media (max-width: 768px) {
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+
+            .nav-link {
+                font-size: 0.9rem;
+            }
+    
+            .custom-more-btn {
+                padding: 8px 12px; /* Adjust padding for smaller screens */
+                font-size: 1rem; /* Adjust font size for smaller screens */
+            }
+        }
+
+    </style>
+    <!-- Bootstrap JS and jQuery Header Section-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Ensure the navbar toggles properly on smaller screens
+        $(document).ready(function() {
+            // Close the navbar when a link is clicked
+            $('.navbar-nav>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        $('a.nav-link').on('click', function(event) {
+            if (this.hash !== "") {
+                event.preventDefault();
+                const hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+                    window.location.hash = hash;
+                });
+            }
+        });
+    </script>
+    <!-- JS  Header Section -- Smooth Scrolling-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Select all links with hashes
+            const links = document.querySelectorAll('a[href^="#"]');
+
+            for (const link of links) {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault();
+
+                    const targetID = this.getAttribute('href').substring(1);
+                    const targetSection = document.getElementById(targetID);
+
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            }
+        });
+    </script>
+
+
+    <!-- Hero HTML Section -->
+    <section id="home" class="hero-section">
+        <section class="head-arrange">
+            <h1 class="hero-title animate__animated animate__fadeIn animate__delay-1s">Welcome to My Portfolio</h1><br>
+            <p class="hero-subtitle animate__animated animate__fadeIn animate__delay-2s">I am Little Murugan, a software developer specializing in deep learning and image security.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary animate__animated animate__bounceIn animate__delay-3s">See My Work</a>
+                    <a href="#contact" class="btn btn-secondary animate__animated animate__bounceIn animate__delay-3s">Contact Me</a>
+                </div>
+        </section>
+    </section>
+    <!-- Hero CSS Section -->
+    <style>
+        /* Hero Section */
+        .hero-section::before {
+            content: "";
+            position: absolute;
+            top: 20;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            z-index: 1;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-section .head-arrange {
+            position: relative;
+            z-index: 2;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        .hero-section h1 {
+            font-size: 4em;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .hero-section p {
+            font-size: 1.5em;
+            max-width: 800px;
+            margin: 0 auto;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero-section .btn {
+            border-radius: 25px;
+            font-size: 1.1em;
+            padding: 0.75em 2em;
+            margin: 0.5em;
+            animation: bounceIn 2s ease-in-out;
+        }
+        .hero-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55vh;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px 0;
+            margin-top: 50px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .hero-buttons .btn {
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #ff5722;
+            border: none;
+        }
+
+        .btn-secondary {
+            background-color: #00bcd4;
+            border: none;
+        }
+
+        .btn:hover {
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            .hero-buttons .btn {
+                padding: 12px 25px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+    <!-- Hero JS Section -->
+    <script>
+        // Hero Section Scroll Reveal Animation
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.hero-section .animate__animated');
+            elements.forEach((element, index) => {
+                element.style.animationDelay = `${index * 0.5 + 1}s`;
+                element.classList.add('animate__fadeIn');
+            });
+
+            // Scroll to section when button is clicked
+            document.querySelectorAll('.hero-buttons a').forEach(btn => {
+                btn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    document.getElementById(targetId).scrollIntoView({ behavior: 'smooth' });
+                });
+            });
+        });
+    </script>
+
+
+    <!-- HTML About Me Section -->
+    <section id="about" style="background-color: #f0f8ff; padding: 5em 0;">
+        <section class="container-fluid" >
+            <h2 class="section-title">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-3 about-me-image">
+                    <img src="imguser.jpg" alt="Guhan" class="img-fluid rounded-circle shadow-lg">
+                </div>
+                <div class="col-md-7 about-me-text">
+                    <p>Hello! I’m Little Murugan, a passionate software developer specializing in deep learning and image security. I enjoy working on innovative projects that push the boundaries of technology. With a strong foundation in programming and a keen eye for detail, I strive to create solutions that are both effective and user-friendly.</p>
+                    
+                    <button id="learnMoreBtn" class="btn btn-primary mt-3">Learn More</button>
+                    <div id="extraContent" style="display: none;">
+                        <p>Beyond my technical skills, I have a strong interest in collaboration and teamwork. I believe that the best solutions come from diverse perspectives and open communication.</p>
+                        <p>My journey in technology began with a fascination for computer science and has since evolved into a career focused on solving complex problems and making a positive impact through technology. I love learning new skills and continuously improving my craft.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- CSS About Me Section -->
+    <style>
+        /* Section Styles */
+        #about {
+            background-color: #f0f8ff;
+            padding: 5em 0;
+            border-radius: 5px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            margin-top: 1.5px; /* Adjusted for the header */
+        }
+        
+        /* Image Styles */
+        .about-me-image {
+            text-align:center;
+            margin-bottom: 15px; /* Space between image and text */
+        }
+        
+        .about-me-image img {
+            border-radius: 50%;
+            box-shadow: 0px 0px 30px rgba(234, 1, 1, 0.15);
+            max-width: 55%;
+            height: auto; /* Ensures aspect ratio is maintained */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .about-me-image img:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Text Styles */
+        .about-me-text {
+            font-family: 'Open Sans', sans-serif;
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .about-me-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        
+        /* Learn More Button */
+        #learnMoreBtn {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        #learnMoreBtn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        
+        /* Extra Content */
+        #extraContent {
+            margin-top: 20px;
+            padding: 20px;
+            border-left: 5px solid #007bff;
+            background-color: #e9ecef;
+            border-radius: 5px;
+            transition: max-height 0.5s ease;
+            overflow: hidden;
+        }
+        
+        #extraContent.show {
+            max-height: 5000px; /* Adjust based on content */
+        }
+    </style>
+    <!-- JS About Me Section -->
+    <script>
+        document.getElementById("learnMoreBtn").addEventListener("click", function() {
+            const extraContent = document.getElementById("extraContent");
+            if (extraContent.style.display === "none") {
+                extraContent.style.display = "block";
+                extraContent.classList.add('show');
+                this.textContent = "Show Less";
+            } else {
+                extraContent.style.display = "none";
+                extraContent.classList.remove('show');
+                this.textContent = "Learn More";
+            }
+        });
+    </script>
+
+
+    <!-- HTML Projects Section -->
+    <section class="container-fluid">
+        <section id="projects" style="background-color: #f0f8ff;; padding: 5em 0;" >
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="100">
+                        <img src="img1project.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Medicinal Plant Supply Management</h5>
+                            <p class="card-text">AI models can effectively identify medicinal plants, aiding in research and conservation efforts. The system architecture of the Supply Management System comprises multiple layers, including the client layer, server layer, integration layer, and infrastructure layer.</p>
+                            <a href="link-to-project1" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="200">
+                        <img src="img2project.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Indoor Object Detection for Blind People</h5>
+                            <p class="card-text">Object Detection Module. In the proposed system, four laser sensors are used for object detection. This module uses three sensors to detect objects in the left, right, and front direction, and another sensor is used for detecting ground or knee-level objects.</p>
+                            <a href="link-to-project2" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-lg animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="300">
+                        <img src="img3project.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">All Plants Disease Detection and Classification</h5>
+                            <p class="card-text">Prevent crop diseases from occurring frequently and the losses that follow from them. The automated disease detection system that uses AI follows predetermined steps. The procedures involve several steps, including installing various sensors in the agricultural field to collect and record plant images.</p>
+                            <a href="link-to-project3" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--CSS Projects Section-->
+    <style>
+            /* CSS Projects Section */
+        #projects {
+            background-color: #f0f8ff;
+            padding: 5em 0;
+        }
+
+        .card {
+            border: none;
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-img-top {
+            border-bottom: 2px solid #007bff;
+            height: 200px; /* Ensure images have a consistent height */
+            object-fit: cover; /* Maintain image aspect ratio */
+        }
+
+        .card-body {
+            padding: 20px;
+            background-color: #ffffff;
+            position: relative;
+        }
+
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #343a40;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .card-body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background-color: #007bff;
+        }
+    </style>
+    <!--JS Projects Section-->
+    <script>
+        // JavaScript for Projects Section
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'scale(1.05)';
+                card.style.boxShadow = '0px 15px 30px rgba(0, 0, 0, 0.2)';
+            });
+
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'scale(1)';
+                card.style.boxShadow = '0px 5px 15px rgba(0, 0, 0, 0.1)';
+            });
+        });     
+    </script>
+
+
+    <!-- HTML Skills Section -->
+    <section class="container-fluid">
+        <section id="skills"  style="background-color: #f0f8ff;; padding: 5em 0;">
+            <div class="container">
+                <h2 class="section-title text-center">Skills</h2>
+                <div class="row">
+                    <!-- Development Tools Skill -->
+                    <div class="col-md-12 mb-4">
+                        <div class="skill-card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="500">
+                            <h3 class="skill-title">Development Tools</h3>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #87ceeb;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                            </div>
+                            <p class="skill-description">Proficient with a variety of development tools including Visual Studio Code, Anaconda, Spyder, Git, and WSL. Skilled in using these tools to streamline coding, debugging, and version control processes.</p>
+                        </div>
+                    </div>
+                    <!-- AWS Cloud Skill -->
+                    <div class="col-md-12 mb-4">
+                        <div class="skill-card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="600">
+                            <h3 class="skill-title">AWS Cloud</h3>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #87ceeb;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                            </div>
+                            <p class="skill-description">Proficient in using AWS services such as EC2, S3, Lambda, and RDS for deploying, managing, and scaling cloud-based applications.</p>
+                        </div>
+                    </div>
+                    <!-- DevOps Skill -->
+                    <div class="col-md-12 mb-4">
+                        <div class="skill-card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="700">
+                            <h3 class="skill-title">DevOps</h3>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #87ceeb;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                            <p class="skill-description">Experienced in implementing DevOps practices including CI/CD pipelines, containerization with Docker, and orchestration with Kubernetes.</p>
+                        </div>
+                    </div>
+                    <!-- Front-end Development Skill -->
+                    <div class="col-md-12 mb-4">
+                        <div class="skill-card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="skill-title">Front-end Development</h3>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 85%; background-color: #87ceeb;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                            </div>
+                            <p class="skill-description">Expert in building responsive and interactive interfaces with HTML, CSS, JavaScript, and React. Skilled in optimizing performance and user experience.</p>
+                        </div>
+                    </div>
+                    <!-- Relational Databases Skill -->
+                    <div class="col-md-12 mb-4">
+                        <div class="skill-card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="skill-title">Relational Databases</h3>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #87ceeb;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            </div>
+                            <p class="skill-description">Experienced in SQL with expertise in database design, management, and optimization for systems like MySQL, Oracle, and PostgreSQL.</p>
+                        </div>
+                    </div>
+                    <!-- Machine Learning Skill -->
+                    <div class="col-md-12 mb-4">
+                        <div class="skill-card animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="400">
+                            <h3 class="skill-title">Machine Learning</h3>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 70%; background-color: #87ceeb;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                            </div>
+                            <p class="skill-description">Solid understanding of machine learning principles and algorithms, including experience with Convolutional Neural Networks and Python data analysis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- CSS Skills Section -->
+    <style>
+            #skills {
+                background-color: #f0f8ff; /* Lighter background for the section */
+                padding: 5em 0;
+            }
+            
+            .section-title {
+                font-size: 2.5em;
+                margin-bottom: 2em;
+                color: #343a40; /* Darker color for better contrast */
+            }
+            
+            .skill-card {
+                background-color: #ffffff; /* Card background color */
+                border: 1px solid #ced4da; /* Slightly darker border color */
+                border-radius: 10px; /* More rounded corners */
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow for more depth */
+                transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transition for scaling effect */
+                padding: 1.5em;
+                text-align: center; /* Center align text in the card */
+            }
+            
+            .skill-card:hover {
+                box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+                transform: translateY(-10px); /* Slight lift effect on hover */
+            }
+            
+            .skill-title {
+                font-size: 1.5em;
+                color: #007bff; /* Bright blue for title */
+                margin-bottom: 0.5em;
+            }
+            
+            .progress {
+                background-color: #e9ecef; /* Light gray background for progress bar container */
+                border-radius: 0.25rem;
+                margin: 0 auto; /* Center align progress bar */
+                width: 80%; /* Adjust width */
+            }
+            
+            .progress-bar {
+                background-color: #28a798; /* Green color for progress bar fill */
+                height: 1.5em;
+                line-height: 1.5em;
+                color: #0a58ff; /* White text color inside the progress bar */
+                border-radius: 0.25rem;
+                font-weight: bold; /* Bold text inside the progress bar */
+            }
+            
+            .skill-description {
+                font-size: 1em;
+                color: #495057; /* Darker gray for better readability */
+                margin-top: 0.5em;
+            }
+            
+            /* Animation using Animate.css and AOS */
+            .animate__animated {
+                animation-duration: 1s;
+                animation-fill-mode: both;
+            }
+            
+            [data-aos="fade-up"] {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            
+            [data-aos="fade-up"].aos-animate {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            
+            [data-aos] {
+                transition: opacity 0.6s ease, transform 0.6s ease;
+            }                  
+    </style>
+    <!-- JS Skills Section -->
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+            // Initialize AOS
+            AOS.init({
+                duration: 1000, // Duration of animations
+                easing: 'ease-in-out', // Easing function
+                once: true, // Whether animation should happen only once
+                offset: 100 // Offset from the bottom
+            });
+
+            // Function to reveal skill cards on scroll
+            function revealSkills() {
+                const skills = document.querySelectorAll('.skill-card');
+
+                skills.forEach(skill => {
+                    const skillPosition = skill.getBoundingClientRect().top;
+                    const viewportHeight = window.innerHeight;
+
+                    if (skillPosition < viewportHeight * 0.8) {
+                        // Add AOS attributes to trigger animations
+                        skill.setAttribute('data-aos', 'fade-up');
+                        skill.classList.add('aos-animate');
+                    }
+                });
+            }
+
+            // Add scroll event listener
+            window.addEventListener('scroll', revealSkills);
+
+            // Call the function once to check initial state
+            revealSkills();
+    </script>
+
+
+    <!-- HTML Journey Section -->
+    <section class="container-fluid">
+        <section id="journey" style="background-color: #f0f8ff; padding: 4em 0;">
+            <div class="container">
+                <h2 class="section-title" style="font-size: 2.5em; text-align: center; margin-bottom: 2em; color: #333;">Journey - Medicinal Plant Supply Management</h2>
+                <div class="row">
+                    <div class="col-lg-6 mb-4 animate-on-scroll">
+                        <div class="card shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                            <img src="img1project.jpg" class="card-img-top" alt="Medicinal Plant Supply Management">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 1.75em; color: #007bff;">Project Overview</h5>
+                                <p class="card-text" style="font-size: 1em; color: #555;">Explore my journey with the Medicinal Plant Supply Management project. This project leverages AI models to identify medicinal plants, aiding in research and conservation efforts. The system architecture includes multiple layers, including client, server, integration, and infrastructure layers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 animate-on-scroll">
+                        <div class="card shadow-sm" style="border-radius: 10px; overflow: hidden;">
+                            <div class="card-body">
+                                <h5 class="card-title" style="font-size: 1.75em; color: #28a745;">Key Features</h5>
+                                <ul class="list-unstyled" style="font-size: 1em; color: #555;">
+                                    <li><i class="fas fa-check-circle" style="color: #28a745;"></i> AI-driven identification of medicinal plants</li>
+                                    <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Multi-layer system architecture</li>
+                                    <li><i class="fas fa-check-circle" style="color: #28a745;"></i> Research and conservation support</li>
+                                </ul>
+                                <a href="https://www.irjmets.com/uploadedfiles/paper//issue_4_april_2024/54974/final/fin_irjmets1714872760.pdf" class="btn btn-primary" target="_self" style="background-color: #007bff; border-color: #007bff;">Read Full Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- CSS Journey Section -->
+    <style>
+            /* Journey Section */
+            #journey {
+                background-color: #f0f8ff;
+                padding: 4em 0;
+            }
+
+            .section-title {
+                font-size: 2.5em;
+                text-align: center;
+                margin-bottom: 2em;
+                color: #333;
+            }
+        
+            .journey-card {
+                border-radius: 10px;
+                overflow: hidden;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+            }
+        
+            .journey-card:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+        
+            .card-title {
+                font-size: 1.75em;
+                color: #007bff;
+            }
+        
+            .card-body {
+                padding: 1.5em;
+            }
+        
+            .card-text {
+                font-size: 1em;
+                color: #555;
+            }
+        
+            .list-unstyled {
+                font-size: 1em;
+                color: #555;
+            }
+        
+            .list-unstyled li {
+                margin-bottom: 0.5em;
+            }
+        
+            .list-unstyled i {
+                color: #28a745;
+                margin-right: 0.5em;
+            }
+        
+            .btn-primary {
+                background-color: #007bff;
+                border-color: #007bff;
+            }
+        
+            .btn-primary:hover {
+                background-color: #0056b3;
+                border-color: #004a99;
+            }
+        </style>
+    <!-- JS Journey Section -->
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Animate-on-Scroll
+                function handleScrollAnimation() {
+                    const elements = document.querySelectorAll('.animate-on-scroll');
+
+                    function isElementInViewport(el) {
+                        const rect = el.getBoundingClientRect();
+                        return (
+                            rect.top >= 0 &&
+                            rect.left >= 0 &&
+                            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                        );
+                    }
+
+                    function addAnimation() {
+                        elements.forEach(el => {
+                            if (isElementInViewport(el)) {
+                                el.classList.add('animate__animated', 'animate__fadeIn');
+                            }
+                        });
+                    }
+
+                    window.addEventListener('scroll', addAnimation);
+                    addAnimation(); // Trigger on load
+                }
+
+                // Call the scroll animation function
+                handleScrollAnimation();
+            });
+    </script>
+
+
+    <!--  HTML Resume Sections -->
+    <section class="container-fluid">
+        <section style="background-color: #f0f8ff; padding: 5em 0;">
+        <section id="resume" class="container mt-5">
+            <h2 class="section-title">Resume</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Professional Experience</h5>
+                            <p class="card-text">A brief overview of your professional experience. Include key roles and responsibilities, as well as notable achievements.</p>
+                            <a href="link/to/resume" class="btn btn-primary">View Full Resume</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Qualifications</h5>
+                            <p class="card-text">A summary of your educational background and any relevant certifications or qualifications that demonstrate your expertise.</p>
+                            <a href="link/to/resume" class="btn btn-primary">View Full Resume</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Skills and Competencies</h5>
+                            <p class="card-text">Highlight key skills and competencies that are relevant to your field. Include any technical skills, soft skills, and industry-specific knowledge.</p>
+                            <a href="link/to/resume" class="btn btn-primary">View Full Resume</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+    </section>
+    <!--  CSS Resume Sections -->
+    <style>
+        /* Flip Card Styles */
+        .flip-card {
+            width: 100%;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            border-radius: 10px;
+        }
+
+        .flip-card-front {
+            background-color: #fff;
+            color: black;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .flip-card-back {
+            background-color: #007bff;
+            color: white;
+            transform: rotateY(180deg);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .flip-card-inner {
+                flex-direction: column;
+            }
+
+            .flip-card-front, .flip-card-back {
+                width: 100%;
+            }
+        }
+
+/* CSS Resume Sections */
+#resume {
+    background-color: #f0f8ff;
+    padding: 5em 0;
+}
+
+
+    </style>
+    <!--  JS Resume Sections -->
+    <script>
+            // JavaScript for Resume Section
+                document.querySelectorAll('.card').forEach(card => {
+                    card.addEventListener('mouseover', () => {
+                        card.style.transform = 'scale(1.05)';
+                        card.style.boxShadow = '0px 15px 30px rgba(0, 0, 0, 0.2)';
+                    });
+
+                    card.addEventListener('mouseout', () => {
+                        card.style.transform = 'scale(1)';
+                        card.style.boxShadow = '0px 5px 15px rgba(0, 0, 0, 0.1)';
+                    });
+                });
+    </script>
+
+
+    <!-- HTML Contact Section -->
+    <section class="container-fluid">
+    <section id="contact" class="container mt-5 py-5">
+        <h2 class="section-title text-center mb-4">Contact Us</h2>
+        <form id="contactForm" class="p-4 bg-light rounded shadow-sm">
+            <div class="form-group mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" class="form-control" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary px-5">Send Message</button>
+            </div>
+        </form>
+    </section>
+    </section>
+    <!-- CSS Contact Section -->
+    <style>
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+    
+        .form-label {
+            font-weight: 500;
+            color: #555;
+        }
+    
+        .form-control {
+            border-radius: 0.25rem;
+            border: 1px solid #ccc;
+        }
+    
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+    
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease;
+        }
+    
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    
+        .bg-light {
+            background-color: #f8f9fa !important;
+        }
+    
+        .shadow-sm {
+            box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+        }
+    </style>  
+    <!-- JS EMAILJS Script  Contact Section-->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('YO8g-_5f9IP08ZB8Z'); // Replace with your EmailJS Public Key
+
+        function sendMail() {
+            let params = {
+                from_name: document.getElementById("name").value,
+                from_email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            };
+
+            emailjs.send("service_5s1ez0d", "template_d0g75z9", params)
+                .then(function(response) {
+                    alert("Email sent successfully!");
+                }, function(error) {
+                    console.error('Error:', error);
+                    alert("Failed to send email.");
+                });
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            sendMail(); // Call the function to send email
+        });
+    </script>
+
+
+    <!-- HTML Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Little Murugan. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://twitter.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- CSS Footer Section-->
+    <style>
+        .footer {
+            background-color: #007bff; /* Blue background */
+            color: white;
+            text-align: center;
+            padding: 2em 0; /* Increased padding */
+            position: relative; /* For positioning the social icons */
+            overflow: hidden; /* To contain animations */
+            font-family: Arial, sans-serif;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer p {
+            margin: 0;
+            font-size: 1.2em; /* Increased font size for readability */
+        }
+        
+        .footer-social {
+            margin-top: 1em;
+        }
+        
+        .social-icon {
+            color: white;
+            font-size: 1.5em;
+            margin: 0 0.5em;
+            transition: color 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-icon:hover {
+            color: #f4f4f4; /* Slightly lighter color on hover */
+            transform: scale(1.2); /* Slightly enlarge on hover */
+        }
+        
+        /* Animation */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+    <!-- JS Footer Section-->
+    <script>
+            // Example of interactive functionality: scroll to top button
+            document.addEventListener('DOMContentLoaded', function() {
+                // Create a button element
+                const scrollToTopBtn = document.createElement('button');
+                scrollToTopBtn.innerHTML = '<i class="fas fa-chevron-up"></i>';
+                scrollToTopBtn.classList.add('scroll-to-top');
+                document.body.appendChild(scrollToTopBtn);
+                
+                // Scroll event
+                window.addEventListener('scroll', () => {
+                    if (window.scrollY > 300) {
+                        scrollToTopBtn.classList.add('show');
+                    } else {
+                        scrollToTopBtn.classList.remove('show');
+                    }
+                });
+                
+                // Click event
+                scrollToTopBtn.addEventListener('click', () => {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+    </script>
+
+
+    <!-- HTML Scroll-to-Top Button section -->
+    <button id="scrollToTopBtn" class="scroll-to-top">
+    <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- CSS Scroll-to-Top Button section -->
+    <style>
+                /* Scroll-to-Top Button */
+            #scrollToTopBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 100;
+                border: none;
+                outline: none;
+                background-color: #007bff;
+                color: white;
+                cursor: pointer;
+                padding: 10px;
+                border-radius: 50%;
+                font-size: 18px;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+            }
+
+            #scrollToTopBtn.show {
+                display: block;
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            #scrollToTopBtn:hover {
+                opacity: 0.8;
+                transform: scale(1.1);
+            }
+            /* Scroll-to-Top Button */
+            .scroll-to-top {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                width: 50px;
+                height: 50px;
+                background-color: #007bff;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+                cursor: pointer;
+                opacity: 0;
+                transition: opacity 0.3s ease, transform 0.3s ease;
+                z-index: 1000;
+            }
+        
+            .scroll-to-top.show {
+                opacity: 1;
+            }
+        
+            .scroll-to-top:hover {
+                background-color: #0056b3;
+            }
+        
+            /* Card Styles */
+            .card {
+                background-color: #ffffff;
+                border: none;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        
+            .card-img-top {
+                border-bottom: 1px solid #e0e0e0;
+            }
+        
+            /* Animate-on-Scroll */
+            .animate-on-scroll {
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+        
+            .animate__animated {
+                animation-duration: 1s;
+            }
+
+    </style>  
+    <!-- JS Scroll-to-Top Button section -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Scroll-to-Top Button
+            const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    scrollToTopBtn.classList.add('show');
+                } else {
+                    scrollToTopBtn.classList.remove('show');
+                }
+            });
+
+            scrollToTopBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Animate-on-Scroll
+            function handleScrollAnimation() {
+                const elements = document.querySelectorAll('.animate-on-scroll');
+
+                function isElementInViewport(el) {
+                    const rect = el.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+
+                function addAnimation() {
+                    elements.forEach(el => {
+                        if (isElementInViewport(el)) {
+                            el.classList.add('animate__animated', 'animate__fadeIn');
+                        }
+                    });
+                }
+
+                window.addEventListener('scroll', addAnimation);
+                addAnimation(); // Trigger on load
+            }
+
+            // Call the scroll animation function
+            handleScrollAnimation();
+        });
+    </script>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // Change navbar color on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+        // Scroll-to-Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+        scrollToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+    <!-- AOS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // Duration of animations
+            easing: 'ease-in-out', // Easing function
+            once: true, // Whether animation should happen only once
+            offset: 100 // Offset from the bottom
+        });
+    </script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
