@@ -1,7 +1,6 @@
 pipeline {
     agent any
     environment {
-        DOCKER_CREDENTIALS = credentials('dockerhub-creds') // Ensure this matches your credentials ID
         GIT_REPO_URL = 'https://github.com/Littlemurugan2275/portfolio1.git'
         IMAGE_NAME = 'littlemurugan2275/portfolio1:latest'
         CONTAINER_NAME = 'portfolio-container'
@@ -25,11 +24,13 @@ pipeline {
             steps {
                 echo 'Pushing Docker image to Docker Hub...'
                 script {
-                    sh '''
-                        echo ${DOCKER_CREDENTIALS_PSW} | docker login -u ${DOCKER_CREDENTIALS_USR} --password-stdin
-                        docker push ${IMAGE_NAME}
-                        docker logout
-                    '''
+                    withCredentials([usernamePassword(credentialsId: 'dockerhub-creds', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                        sh '''
+                            echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin
+                            docker push ${IMAGE_NAME}
+                            docker logout
+                        '''
+                    }
                 }
             }
         }
