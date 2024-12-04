@@ -1,10 +1,10 @@
 pipeline {
     agent any
     environment {
-        DOCKER_CREDENTIALS = credentials('dockerhub-creds') // Ensure this is the correct credential ID in Jenkins
+        DOCKER_CREDENTIALS = credentials('dockerhub-creds') // Ensure this matches your credentials ID
         GIT_REPO_URL = 'https://github.com/Littlemurugan2275/portfolio1.git'
-        IMAGE_NAME = 'littlemurugan2275/portfolio1:latest'  // Updated image name to match the repo name
-        CONTAINER_NAME = 'portfolio-container'  // Use the same name as the container you're deploying
+        IMAGE_NAME = 'littlemurugan2275/portfolio1:latest'
+        CONTAINER_NAME = 'portfolio-container'
     }
     stages {
         stage('Clone Repository') {
@@ -46,8 +46,12 @@ pipeline {
     }
     post {
         always {
-            echo 'Cleaning up workspace...'
-            cleanWs()
+            script {
+                node {
+                    echo 'Cleaning up workspace...'
+                    cleanWs()
+                }
+            }
         }
     }
 }
